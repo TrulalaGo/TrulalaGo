@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#000000">
+
+    <LinearLayout
+         android:layout_height="500dp"
+         android:layout_width="match_parent"
+         android:layout_margin="15dp">
+
+        <ScrollView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent">
+
+            <TextView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:clickable="true"
+                 android:textColor="@color/langit"
+                 android:focusable="true"
+                 android:textIsSelectable="true"
+                 android:text="$"
+                 android:id="@+id/hasil" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="60dp"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="30dp"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:layout_gravity="bottom">
+
+        <EditText
+             android:layout_height="50dp"
+             android:layout_width="300dp"
+             android:layout_marginEnd="5dp"
+             android:textSize="12dp"
+             android:textColor="#ffffff"
+             android:id="@+id/perintah" />
+
+        <TextView
+             android:layout_height="50dp"
+             android:layout_width="50dp"
+             android:gravity="center"
+             android:background="@color/langit"
+             android:textSize="15sp"
+             android:textColor="#000000"
+             android:id="@+id/mulai"
+             android:text="Run" />
+
+    </LinearLayout>
+
+</FrameLayout>

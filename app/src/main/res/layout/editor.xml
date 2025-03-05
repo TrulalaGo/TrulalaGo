@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#000000"
+     android:orientation="horizontal">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="250dp"
+         android:visibility="gone"
+         android:background="#555555"
+         android:orientation="horizontal"
+         android:id="@+id/liner">
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="50dp"
+             android:background="#F6F6F6"
+             android:gravity="center_horizontal"
+             android:orientation="vertical">
+
+            <ImageView
+                 android:layout_height="40dp"
+                 android:layout_width="40dp"
+                 android:layout_marginBottom="20dp"
+                 android:src="@drawable/plugin"
+                 android:layout_marginTop="30dp"
+                 android:id="@+id/plugin" />
+
+            <ImageView
+                 android:layout_height="40dp"
+                 android:layout_width="40dp"
+                 android:layout_marginBottom="20dp"
+                 android:src="@drawable/folder"
+                 android:layout_marginTop="30dp"
+                 android:id="@+id/folder" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="15dp"
+             android:orientation="vertical">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center_horizontal"
+                     android:id="@+id/memo">
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="50dp"
+             android:layout_width="match_parent"
+             android:background="#555555"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+
+            <ImageView
+                 android:layout_height="40dp"
+                 android:layout_width="40dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginEnd="40dp"
+                 android:id="@+id/nav" />
+
+            <ImageView
+                 android:layout_height="40dp"
+                 android:layout_width="40dp"
+                 android:src="@drawable/simpan"
+                 android:layout_marginEnd="20dp"
+                 android:id="@+id/simpan" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:background="#000000"
+             android:orientation="horizontal">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="30dp"
+                 android:id="@+id/scrollNomor">
+
+                <TextView
+                     android:layout_height="match_parent"
+                     android:layout_width="30dp"
+                     android:gravity="center"
+                     android:background="#222222"
+                     android:textSize="15dp"
+                     android:textColor="@color/langit"
+                     android:id="@+id/nomor"
+                     android:paddingTop="10dp"
+                     android:text="1" />
+
+            </ScrollView>
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:id="@+id/scrollEdit">
+
+                <EditText
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:background="#000000"
+                     android:padding="10dp"
+                     android:textSize="13sp"
+                     android:textColor="@android:color/white"
+                     android:id="@+id/edit" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
