@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="horizontal">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="250dp"
+         android:visibility="gone"
+         android:background="#444444"
+         android:id="@+id/liner">
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:background="#000000"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="50dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="#555555"
+             android:orientation="horizontal">
+
+            <ImageView
+                 android:layout_height="40dp"
+                 android:layout_width="40dp"
+                 android:layout_marginEnd="40dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginStart="5dp"
+                 android:id="@+id/nav" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="15dp"
+             android:orientation="vertical">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:columnCount="3"
+                     android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center"
+                         android:background="@color/langit"
+                         android:layout_margin="10dp"
+                         android:orientation="vertical"
+                         android:id="@+id/editor">
+
+                        <ImageView
+                             android:layout_height="40dp"
+                             android:layout_width="40dp"
+                             android:src="@drawable/editor"
+                             android:layout_margin="10dp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="80dp"
+                             android:background="#000000"
+                             android:gravity="center"
+                             android:textColor="@color/langit"
+                             android:text="Editor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center"
+                         android:background="@color/langit"
+                         android:layout_margin="10dp"
+                         android:orientation="vertical"
+                         android:id="@+id/chating">
+
+                        <ImageView
+                             android:layout_height="40dp"
+                             android:layout_width="40dp"
+                             android:src="@drawable/chat"
+                             android:layout_margin="10dp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="80dp"
+                             android:gravity="center"
+                             android:background="#000000"
+                             android:textColor="@color/langit"
+                             android:text="Chating" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center"
+                         android:background="@color/langit"
+                         android:layout_margin="10dp"
+                         android:orientation="vertical"
+                         android:id="@+id/berkas">
+
+                        <ImageView
+                             android:layout_height="40dp"
+                             android:layout_width="40dp"
+                             android:src="@drawable/folder"
+                             android:layout_margin="10dp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="80dp"
+                             android:gravity="center"
+                             android:background="#000000"
+                             android:textColor="@color/langit"
+                             android:text="Berkas" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center"
+                         android:background="@color/langit"
+                         android:layout_margin="10dp"
+                         android:orientation="vertical"
+                         android:id="@+id/browser">
+
+                        <ImageView
+                             android:layout_height="40dp"
+                             android:layout_width="40dp"
+                             android:src="@drawable/browser"
+                             android:layout_margin="10dp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="80dp"
+                             android:gravity="center"
+                             android:background="#000000"
+                             android:textColor="@color/langit"
+                             android:text="Browser" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center"
+                         android:background="@color/langit"
+                         android:layout_margin="10dp"
+                         android:orientation="vertical"
+                         android:id="@+id/terminal">
+
+                        <ImageView
+                             android:layout_height="40dp"
+                             android:layout_width="40dp"
+                             android:src="@drawable/termux"
+                             android:layout_margin="10dp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="80dp"
+                             android:gravity="center"
+                             android:background="#000000"
+                             android:textColor="@color/langit"
+                             android:text="Terminal" />
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
